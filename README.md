@@ -60,7 +60,7 @@ O aplicativo permite que o usuário informe o nome de uma cidade e, em seguida, 
 - 
 <div align="center">
   
-<img width="500" height="500" alt="Imagem Função App" src="https://github.com/user-attachments/assets/537e3927-7c37-4997-875a-3b19376dcaa8" />
+https://github.com/user-attachments/assets/8872b8e4-9105-420e-8519-e8f4870e4212
 
 </div>
 
