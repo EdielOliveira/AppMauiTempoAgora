@@ -1,17 +1,60 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="AppMauiTempoAgora.MainPage">
+             x:Class="AppMauiTempoAgora.MainPage"
+             BackgroundColor="#F4F6F8">
 
     <ScrollView>
         <VerticalStackLayout
-            Padding="30,0"
-            Spacing="25">
+            Padding="30"
+            Spacing="20"
+            VerticalOptions="Center">
 
-            <Entry x:Name="txt_cidade"/>
-            <Button Text="Buscar" Clicked="Button_Clicked"/>
+            <Image
+                Source="logo_tempo_agora.png"
+                HorizontalOptions="Center"
+                WidthRequest="300"
+                HeightRequest="120"/>
 
-            <Label x:Name="lbl_res"/>
+            <Label
+                Text="Bem-vindo ao Tempo Agora!"
+                FontSize="18"
+                HorizontalOptions="Center"
+                TextColor="#374151"/>
+
+            <Label
+                Text="Digite o nome da sua cidade:"
+                FontSize="14"
+                TextColor="#4B5563"/>
+
+            <Border
+                Stroke="#CBD5E1"
+                StrokeThickness="1"
+                BackgroundColor="White"
+                StrokeShape="RoundRectangle 12"
+                Padding="10">
+
+                <Entry
+                    x:Name="txt_cidade"
+                    Placeholder="Ex: São Paulo"
+                    TextColor="Black"
+                    BackgroundColor="Transparent"/>
+            </Border>
+
+            <Button
+                Text="Buscar"
+                Clicked="Button_Clicked"
+                BackgroundColor="#2563EB"
+                TextColor="White"
+                CornerRadius="12"
+                HeightRequest="50"/>
+            
+            <Label
+                x:Name="lbl_res"
+                FontSize="14"
+                TextColor="#111827"/>
+
+
         </VerticalStackLayout>
     </ScrollView>
 
